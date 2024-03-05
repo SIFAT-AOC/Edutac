@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/*  colors variable */
+$color-red: #ff0000;
+$color-green: #2eb97e;
+$color-white: #ffff;
+$color-pure-black: #0000;
+$color-rgba-black: $color-rgba-black;
+$star-icons-color: #ffa41b;
+/*  fontsize variable */
+$primary-font: 3.8rem;
+$secondary-font: 2.7rem;
+$medium-font: 1.5rem;
+$normal-font: 1.2rem;
+$small-font: 1rem;
+/*  width variable */
+$primary-width: 120rem;
+$similar-width: 73rem;
+/*  icons size variable */
+$medium-icons: 1.5rem;
+$small-icons: 1rem;
+
+.eduMax-container {
+  max-width: var($primary-width);
+  margin: 0 auto;
+}
+.eduMin-container {
+  max-width: var($similar-width);
+  margin: 0 auto;
+}
+
+.edunav {
+  padding-left: 10rem !important;
+  padding-right: 10rem !important;
+  form {
+    border: 2px solid $color-rgba-black;
+  }
+  form input[type="search"]:focus {
+    outline: 0;
+  }
+  .flex-grow-1 .category {
+    border: 2px solid $color-rgba-black;
+    border-right: none;
+  }
+  .btn-singup,
+  .btn-login {
+    padding: 13px 15px;
+    border-radius: 10px;
+    transition: 0.4s all ease;
+  }
+  .btn-login {
+    background: $color-green;
+    color: $color-white;
+  }
+  .btn-singup {
+    border: 1px solid $color-rgba-black;
+    background: $color-white;
+  }
+  .btn-login:hover {
+    background: $color-white;
+    color: $color-pure-black;
+    border: 1px solid $color-rgba-black;
+  }
+  .btn-singup:hover {
+    background: $color-rgba-black;
+    color: $color-white;
+  }
+}
+
+.edunav ul > li > a {
+  color: $color-pure-black;
+  font-weight: 400;
+
+  transition: 0.4s all ease;
+  &:hover {
+    color: $color-green !important;
+    font-weight: 400;
+  }
+}
+// utility classes
+.outline-zero {
+  outline: 0;
+}
+
+.cart-btn {
+  background-color: $color-white;
+  border: 1px solid $color-rgba-black;
+  padding: 12px 15px;
+  border-radius: 80%;
+  transition: 0.4s all ease;
+}
+.cart-btn:hover {
+  background-color: $color-green;
+  color: $color-green;
+  svg .cart-icon {
+    fill: $color-white;
+  }
+}
